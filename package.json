@@ -1,0 +1,13 @@
+{
+  "name": "still-here",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Experiencia editorial sobre identidad, confrontación, límites y transformación.",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "test": "node tests/site.test.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

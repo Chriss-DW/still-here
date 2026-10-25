@@ -1,0 +1,136 @@
+/* STILL HERE. / & AGAIN. — Fundamentos compartidos. */
+
+:root {
+  color-scheme: dark;
+  --black: #080808;
+  --surface: #111;
+  --paper: #f3f1ee;
+  --stone: #a6a3a0;
+  --line: #373533;
+  --serif: 'Playfair Display',Georgia,serif;
+  --sans: 'Inter',sans-serif;
+  --mono: 'JetBrains Mono',monospace;
+  --white: var(--paper);
+  --gray: var(--stone);
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  scrollbar-color: rgb(85, 85, 85) rgb(8, 8, 8);
+}
+
+body {
+  background: var(--black);
+  color: var(--paper);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgb(214, 207, 197);
+  color: rgb(8, 8, 8);
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 1px;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1;
+}
+
+:focus-visible {
+  outline: 1px solid var(--paper);
+  outline-offset: 6px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 1.25rem;
+  z-index: 2000;
+  padding: 1rem;
+  background: var(--paper);
+  color: var(--black);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.reading-progress {
+  position: fixed;
+  inset: 0px 0px auto;
+  height: 2px;
+  z-index: 1000;
+  background: rgb(199, 193, 184);
+  transform: scaleX(0);
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+.page-footer {
+  padding: 2rem clamp(1.25rem, 6vw, 8rem);
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.page-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font: 700 1rem var(--serif);
+}
+
+.page-footer span {
+  font: .65rem var(--mono);
+  color: var(--stone);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, ::before, ::after {
+    animation: auto ease 0s 1 normal none running none !important;
+    transition: none !important;
+  }
+
+}
