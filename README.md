@@ -6,7 +6,7 @@ Ocho relatos. Cuatro actos. Un recorrido por la identidad, el miedo, los límite
 
 ![Vista de la portada de STILL HERE. en escritorio](docs/images/inicio-desktop.webp)
 
-**[Autor: Chriss-DW](https://github.com/Chriss-DW)** · HTML · CSS · JavaScript · Diseño adaptable
+**[Ver la página](https://chriss-dw.github.io/still-here/)** · **[Autor: Chriss-DW](https://github.com/Chriss-DW)** · HTML · CSS · JavaScript · Diseño adaptable
 
 ## Concepto
 

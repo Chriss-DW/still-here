@@ -2,6 +2,11 @@
   "name": "still-here",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://chriss-dw.github.io/still-here/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chriss-DW/still-here.git"
+  },
   "description": "Experiencia editorial sobre identidad, confrontación, límites y transformación.",
   "scripts": {
     "start": "node scripts/serve.cjs",
